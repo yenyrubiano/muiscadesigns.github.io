@@ -1,191 +1,1003 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>MuiscaDesigns</title>
-		<meta name="description" content="MuiscaDesigns creates visual concepts to communicate ideas that inspire, inform, and captivate your brand." />
-		<meta name="keywords" content="muiscadesigns, graphics, websites, ui, ux, designer, branding, logos, layout" />
-		<meta name="author" content="MuiscaDesigns" />
-		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-		<link rel="manifest" href="favicon/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
-	<body class="demo-1">
-		<svg class="hidden">
-			<symbol id="icon-github" viewBox="0 0 56.7 56.7">
-				<title>LinkedIn</title>
-				<path d="M49.3 4.7H7.1c-2 0-3.7 1.6-3.7 3.6v42.6c0 2 1.6 3.6 3.7 3.6h42.1c2 0 3.7-1.6 3.7-3.6V8.2c0-1.9-1.6-3.5-3.6-3.5zM18.5 46.3H11V23.8h7.5v22.5zm-3.8-25.5c-2.6 0-4.2-1.7-4.2-3.9s1.7-3.9 4.2-3.9c2.6 0 4.1 1.7 4.2 3.9.1 2.2-1.6 3.9-4.2 3.9zm30.7 25.5h-7.5v-12c0-3-1.1-5.1-3.8-5.1-2.1 0-3.3 1.4-3.8 2.7-.2.5-.2 1.1-.2 1.8v12.5h-7.5s.1-20.4 0-22.5h7.5V27c1-1.5 2.8-3.7 6.7-3.7 4.9 0 8.6 3.2 8.6 10.1v12.9z" />
-			</symbol>
-		</svg>
-		<main>	
-			<div class="content content--fixed">
-				<header class="codrops-header">
-					<h1 class="codrops-header__title">MUISCA DESIGNS</h1>
-				</header>
-				<a class="github" href="https://www.linkedin.com/in/muiscadesigns/" title="My LinkedIn profile"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
-			</div>
-			<div class="content">
-				<div class="slideshow">
-					<div class="slide slide--current">
-						<div class="slide__bg slide__bg--9"></div>
-						<h2 class="word word--9">Coming Soon</h2>
-					</div>
-				</div>
-			</div>
-		</main>
-		<script src="js/charming.min.js"></script>
-		<script src="js/anime.min.js"></script>
-		<script src="js/wordFx.js"></script>
-		<script>
-			{
-				const effects = [
-					// Effect
-					{
-						options: {
-							shapeColors: ['#FD74FF','#3771FC','#7C5CE4','#542A95','#ACC7FE'],
-							shapeTypes: ['rect','polygon'],
-							totalShapes: 1
-						},
-						hide: {
-							lettersAnimationOpts: {
-								duration: () => anime.random(800,1000),
-								delay: () => anime.random(0,80),
-								easing: 'easeInOutExpo',
-								opacity: 0,
-								translateY: '300%',
-								rotateZ: () => anime.random(-50,50)
-							},
-							shapesAnimationOpts: {
-								duration: 350,
-								easing: 'easeOutExpo',
-								translateX: t => [t.dataset.tx,anime.random(-25,25)],
-								translateY: t => [t.dataset.ty,anime.random(-25,25)],
-								scale: 1,
-								rotate: 0,
-								opacity: {
-									value: 0, 
-									duration: 200, 
-									easing: 'linear'
-								}
-							}
-						},
-						show: {
-							lettersAnimationOpts: {
-								duration: 800,
-								delay: () => anime.random(0,75),
-								easing: 'easeInOutExpo',
-								opacity: [0,1],
-								translateY: ['-300%','0%'],
-								rotate: () => [anime.random(-50,50), 0]
-							},
-							shapesAnimationOpts: {
-								duration: 2000,
-								easing: 'easeOutExpo',
-								translateY: t => {
-									const ty = anime.random(-300,300);
-									t.dataset.ty = ty;
-									return [anime.random(-25,25),ty];
-								},
-								scale: t => {
-									const s = randomBetween(1.5,2);
-									t.dataset.s = s;
-									return [s,s];
-								},  
-								rotate: () => anime.random(-45,45),
-								opacity: {
-									value: [0,0.9], 
-									duration: 600,
-									delay: 300,
-									easing: 'linear'
-								}
-							}
-						}
-					}
-				];
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Muisk | Product Designer</title>
 
-				class Slideshow {
-					constructor(el) {
-						this.DOM = {};
-						this.DOM.el = el;
-						this.DOM.slides = Array.from(this.DOM.el.querySelectorAll('.slide'));
-						this.DOM.bgs = Array.from(this.DOM.el.querySelectorAll('.slide__bg'));
-						this.DOM.words = Array.from(this.DOM.el.querySelectorAll('.word'));
-						this.slidesTotal = this.DOM.slides.length;
-						this.current = 0;
-						this.words = [];
-						this.DOM.words.forEach((word, pos) => {
-							this.words.push(new Word(word, effects[pos].options));
-						});
-						
-						this.isAnimating = true;
-						this.words[this.current].show(effects[this.current].show).then(() => this.isAnimating = false);
-					}
-					show(direction) {
-						if ( this.isAnimating ) return;
-						this.isAnimating = true;
-						
-						let newPos;
-						let currentPos = this.current;
-						if ( direction === 'next' ) {
-							newPos = currentPos < this.slidesTotal - 1 ? currentPos+1 : 0;
-						}
-						else if ( direction === 'prev' ) {
-							newPos = currentPos > 0 ? currentPos-1 : this.slidesTotal - 1;
-						}
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Muisk - Creates visual concepts to communicate, inspire, and captivate.">
+    <meta name="keywords" content="freelance, creative, prototype showcase, design, layout, saas, fintech, digital marketing, services, ui, ux, marketing, seo, landing, portfolio, html5, css3">
+    <meta name="author" content="Muisk Designs">
 
-						this.DOM.slides[newPos].style.opacity = 1;
-						this.DOM.bgs[newPos].style.transform = 'none';
-						anime({
-							targets: this.DOM.bgs[currentPos],
-							duration: 600,
-							easing: [0.2,1,0.3,1],
-							translateY: ['0%', direction === 'next' ? '-100%' : '100%'],
-							complete: () => {
-								this.DOM.slides[currentPos].classList.remove('slide--current');
-								this.DOM.slides[currentPos].style.opacity = 0;
-								this.DOM.slides[newPos].classList.add('slide--current');
-								this.words[newPos].show(effects[newPos].show).then(() => this.isAnimating = false);
-							}
-						});
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-						this.words[newPos].hide();
-						this.words[this.current].hide(effects[currentPos].hide).then(() => {
-							
-							this.current = newPos;
-						});
-					}
-    			}
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
-				const slideshow = new Slideshow(document.querySelector('.slideshow'));
-				document.querySelector('.slidenav__item--prev').addEventListener('click', () => slideshow.show('prev') );
-				document.querySelector('.slidenav__item--next').addEventListener('click', () => slideshow.show('next') );
-				document.addEventListener('keydown', (ev) => {
-					const keyCode = ev.keyCode || ev.which;
-					if ( keyCode === 37 ) {
-						slideshow.show('prev');
-					}
-					else if ( keyCode === 39 ) {
-						slideshow.show('next');
-					}
-				});
-			}
-		</script>
-	</body>
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Hotjar Tracking Code for Muisk Desisgns -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3409672,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script> 
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+      <!-- Navbar -->
+      <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <img src="assets/img/logo.svg" width="47" alt="Muisk">
+            Muisk
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link" aria-current="page" data-scroll>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#projects" class="nav-link" data-scroll>Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#skills" class="nav-link" data-scroll>Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link" data-scroll>About</a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="mailto:hellomuisca@gmail.com?subject=Hello%20there" class="btn btn-primary w-100">
+                <i class="bx bx-envelope fs-4 lh-1 me-1"></i>
+                &nbsp;Work with me
+              </a>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode"><small>Light</small></label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode"><small>Dark</small></label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="mailto:hellomuisca@gmail.com?subject=Hello%20there" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
+            <i class="bx bx-envelope fs-5 lh-1 me-1"></i>
+            &nbsp;Work with me
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class="jarallax position-relative d-flex align-items-center min-vh-100 bg-light mb-5 py-lg-5 pt-5" style="background-image: url(assets/img/landing/hero-bg.svg);" data-jarallax data-img-position="0% 100%" data-speed="0.5" id="home">
+        <div class="container position-relative zindex-5 py-5">
+          <div class="row justify-content-md-start justify-content-center">
+            <div class="col-md-6 col-sm-8 order-md-1 order-2 d-flex flex-column justify-content-between mt-4 pt-2 text-md-start text-center">
+              <div class="mb-md-5 pb-xl-5 mb-4">
+
+                <!-- Text -->
+                <p class="h3 mt-4">
+                  <small>👋 &nbsp; Hi, I'm Yeny. Product Designer.</small>
+                </p>
+                <h1 class="display-4 mb-md-5 mb-3 pb-3">
+                  I create brands by <span class="text-gradient-primary">strategic design</span> & development.
+                </h1>
+                <div class="d-md-flex align-items-md-start">
+                  <a href="mailto:hellomuisca@gmail.com?subject=Hello%20there" class="btn btn-lg btn-primary flex-shrink-0 me-md-4 mb-md-0 mb-sm-4 mb-3">Let's discuss your project</a>
+                  <p class="d-lg-block d-none mb-0 ps-md-3">10+ years of UI/UX design, digital marketing, and front-end experience. I've taken on multiple leadership roles while shipping impact-driven products.</p>
+                </div>
+              </div>
+
+              <!-- Scroll down btn -->
+              <div class="d-inline-flex align-items-center justify-content-center justify-content-md-start position-relative">
+                <a href="#benefits" data-scroll data-scroll-offset="100" class="btn btn-video btn-icon rounded-circle shadow-sm flex-shrink-0 stretched-link me-3">
+                  <i class="bx bx-chevron-down"></i>
+                </a>
+                <span class="fs-sm">Discover more</span>
+              </div>
+            </div>
+
+            <!-- Animated gfx -->
+            <div class="col-sm-6 col-sm-6 col-9 order-md-2 order-1">
+              <lottie-player src="https://lottie.host/997b6b89-de16-469e-93e2-43fc2875ed20/2JQYV0O9rW.json"  background="transparent"  speed="1"  style="width: 600; height: 600;"  loop  autoplay></lottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits (features) -->
+      <section class="container mb-5 pt-lg-5" id="benefits">
+        <div class="swiper pt-3" data-swiper-options='{
+          "slidesPerView": 1,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 2
+            },
+            "991": {
+              "slidesPerView": 3
+            }
+          }
+        }'>
+          <div class="swiper-wrapper">
+
+            <!-- Item -->
+            <div class="swiper-slide border-end-lg px-2">
+              <div class="text-center">
+                <img src="assets/img/landing/icons/think.svg" width="48" alt="Design Thinking" class="d-block mb-4 mx-auto">
+                <h4 class="mb-2 pb-1">Design Thinking</h4>
+                <p class="mx-auto" style="max-width: 336px;">I brainstorm, explore, and define the journey to set goals.</p>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide border-end-lg px-2">
+              <div class="text-center">
+                <img src="assets/img/landing/icons/lean.svg" width="48" alt="Lean" class="d-block mb-4 mx-auto">
+                <h4 class="mb-2 pb-1">Lean</h4>
+                <p class="mx-auto" style="max-width: 336px;">I study data to prove designs for the right product to evolved.</p>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide px-2">
+              <div class="text-center">
+                <img src="assets/img/landing/icons/agile.svg" width="48" alt="Agile" class="d-block mb-4 mx-auto">
+                <h4 class="mb-2 pb-1">Agile</h4>
+                <p class="mx-auto" style="max-width: 336px;">Product is created and improved based on user experience.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
+      <section class="container mb-5 pt-lg-2 pt-xl-4 pb-2 pb-md-3 pb-lg-5" id="projects">
+        <h2 class="h1 mb-4 text-center">Featured Projects</h2>
+        <p class="mb-4 mx-auto pb-3 fs-lg text-center" style="max-width: 636px;">I create user interfaces for SaaS, design systems, digital marketing (B2B/B2C), infographics, and front-end development.</p>
+        <p class="mb-4 mx-auto pb-3 fs-lg text-center" style="max-width: 636px;"><strong>SECTION COMING SOON</strong></p>
+        <!-- Portfolio grid -->
+        <div class="masonry-grid row g-md-4 g-3 mb-4" style="display: none;">
+
+          <!-- Item -->
+          <div class="masonry-grid-item col-md-4 col-sm-6 col-12">
+            <a href="project-1.html" class="card card-portfolio card-hover bg-transparent border-0">
+              <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 rounded-3"></span>
+                <div class="position-relative zindex-2">
+                  <h3 class="h5 text-light mb-2">Digital Finance is Powered by Corda</h3>
+                  <span class="fs-sm text-light opacity-70">Unified user experience for Corda developers.</span>
+                </div>
+              </div>
+              <div class="card-img">
+                <img src="assets/img/portfolio/grid/digital-finance-is-powered-by-corda.jpg" class="rounded-3" alt="Digital finance is powered by Corda">
+              </div>
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="masonry-grid-item col-md-4 col-sm-6 col-12">
+            <a href="project-2.html" class="card card-portfolio card-hover bg-transparent border-0">
+              <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 rounded-3"></span>
+                <div class="position-relative zindex-2">
+                  <h3 class="h5 text-light mb-2">Building and Customizing the Future of IoT</h3>
+                  <span class="fs-sm text-light opacity-70">UI to connect users to an ecosystem of smarter living solutions.</span>
+                </div>
+              </div>
+              <div class="card-img">
+                <img src="assets/img/portfolio/grid/building-and-customizing-the-future-of-iot.jpg" class="rounded-3" alt="Building and customizing the future of IoT">
+              </div>
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="masonry-grid-item col-md-4 col-sm-6 col-12">
+            <a href="project-3.html" class="card card-portfolio card-hover bg-transparent border-0">
+              <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 rounded-3"></span>
+                <div class="position-relative zindex-2">
+                  <h3 class="h5 text-light mb-2">Deploying, Accelerating, and Protecting Data</h3>
+                  <span class="fs-sm text-light opacity-70">UI for a high-performance, fully automated, and completely secure global CDN.</span>
+                </div>
+              </div>
+              <div class="card-img">
+                <img src="assets/img/portfolio/grid/deploying-accelerating-and-protecting-data.jpg" class="rounded-3" alt="Deploying, accelerating, and protecting data">
+              </div>
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="masonry-grid-item col-md-8 col-12">
+            <a href="project-4.html" class="card card-portfolio card-hover bg-transparent border-0">
+              <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 rounded-3"></span>
+                <div class="position-relative zindex-2">
+                  <h3 class="h5 text-light mb-2">Integrating Devices, Automations, and Capabilities with Connected Services</h3>
+                  <span class="fs-sm text-light opacity-70">Unified user experience for SmartThings developers.</span>
+                </div>
+              </div>
+              <div class="card-img">
+                <img src="assets/img/portfolio/grid/integrating-devices-automations-and-capabilities-with-connected-services.jpg" class="rounded-3" alt="Integrating devices, automations, and capabilities with connected services">
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- Services -->
+      <section class="container mb-5 pb-2 pb-md-4 pb-lg-5" id="skills">
+        <div class="card border-0 bg-secondary p-md-5 px-sm-2 pt-4 pb-3">
+          <div class="card-body mx-auto" style="max-width: 860px;">
+            <h2 class="h1 mb-4 text-center">My Skills</h2>
+            <p class="mb-4 pb-3 fs-lg text-center text-muted">I enjoy creating people-centric, delightful experiences. </p>
+
+            <!-- Accordion: Alternative style -->
+            <div class="accordion" id="accordion-services">
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header" id="heading-1">
+                  <button class="accordion-button fs-xl shadow-none rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Product Design</button>
+                </h3>
+                <div class="accordion-collapse collapse show" id="collapse-1" aria-labelledby="heading-1" data-bs-parent="#accordion-services">
+                  <div class="accordion-body pt-0">
+                    <div class="d-flex flex-md-row flex-column align-items-md-center">
+                      <img src="assets/img/landing/services/product-design.png" width="200" alt="Product Design" class="me-md-4 mb-md-0 mb-3">
+                      <div class="ps-md-3">
+                        <p class="mb-0">I use different facets and tools of design to create and execute solutions for user experience deficiencies. My process includes analyzes, designs, testing, launching, and evaluation. I do this by brainstorming solutions to current pain points, taking input from stakeholders, acting as a liaison between teams, and helping compose mock-ups through wireframes and interactive prototypes.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header" id="heading-2">
+                  <button class="accordion-button fs-xl shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">Digital Marketing</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="collapse-2" aria-labelledby="heading-2" data-bs-parent="#accordion-services">
+                  <div class="accordion-body pt-0">
+                    <div class="d-flex flex-md-row flex-column align-items-md-center">
+                      <img src="assets/img/landing/services/digital-marketing.png" width="200" alt="Digital Marketing" class="me-md-4 mb-md-0 mb-3">
+                      <div class="ps-md-3">
+                        <p class="mb-0">I drive brand awareness and lead generation through digital channels; such as social media, website, search engine rankings, email, display advertising, and blog. I like to focus on key performance indicators (KPIs) to properly measure performance B2B and B2C.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header" id="heading-3">
+                  <button class="accordion-button fs-xl shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">UI/UX</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="collapse-3" aria-labelledby="heading-3" data-bs-parent="#accordion-services">
+                  <div class="accordion-body pt-0">
+                    <div class="d-flex flex-md-row flex-column align-items-md-center">
+                      <img src="assets/img/landing/services/ui-ux.png" width="200" alt="UI UX" class="me-md-4 mb-md-0 mb-3">
+                      <div class="ps-md-3">
+                        <p class="mb-0">As a UI designer, my goal is to make SaaS, websites, and apps visually appealing and easy to navigate. As a UX designer, I focus on the experience a user has with the interface. My goal is to always design products that are functional, accessible, and enjoyable to use.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header" id="heading-4">
+                  <button class="accordion-button fs-xl shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">Front-end Development</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="collapse-4" aria-labelledby="heading-4" data-bs-parent="#accordion-services">
+                  <div class="accordion-body pt-0">
+                    <div class="d-flex flex-md-row flex-column align-items-md-center">
+                      <img src="assets/img/landing/services/front-end-development.png" width="200" alt="Front-end Development" class="me-md-4 mb-md-0 mb-3">
+                      <div class="ps-md-3">
+                        <p class="mb-0">I have HTML/CSS skills under my sleeve. I have the ability to transform my designs into interactive interfaces. I have an eye for detail and a rock-solid understanding of what is needed behind the scenes for a site or application to run.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header" id="heading-5">
+                  <button class="accordion-button fs-xl shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">Strategy &amp; Management</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="collapse-5" aria-labelledby="heading-5" data-bs-parent="#accordion-services">
+                  <div class="accordion-body pt-0">
+                    <div class="d-flex flex-md-row flex-column align-items-md-center">
+                      <img src="assets/img/landing/services/strategy-and-management.png" width="200" alt="Strategy and Management" class="me-md-4 mb-md-0 mb-3">
+                      <div class="ps-md-3">
+                        <p class="mb-0">During the course of my career, I have had the opportunity to manage my own business. I have the ability to outline projects, assign tasks, foresee obstacles, find creative solutions, meet deadlines, and show stakeholders a plan to succeed are crucial to excellent management.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Brands (Carousel) -->
+      <section class="container pb-4 pb-lg-5 mb-3">
+        <div class="d-flex align-items-center justify-content-md-between justify-content-center mb-md-4 mb-3">
+          <h2 class="mb-0">Trusted by Awesome Clients</h2>
+
+          <!-- Slider prev/next buttons + Quotation mark -->
+          <div class="d-md-flex d-none ms-4">
+            <button type="button" id="prev-brand" class="btn btn-prev btn-icon btn-sm me-2">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button type="button" id="next-brand" class="btn btn-next btn-icon btn-sm ms-2">
+              <i class="bx bx-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="swiper mx-n2" data-swiper-options='{
+          "slidesPerView": 2,
+          "navigation": {
+            "prevEl": "#prev-brand",
+            "nextEl": "#next-brand"
+          },
+          "loop": true,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 3,
+              "spaceBetween": 8
+            },
+            "650": {
+              "slidesPerView": 4,
+              "spaceBetween": 8
+            },
+            "900": {
+              "slidesPerView": 5,
+              "spaceBetween": 8
+            },
+            "1100": {
+              "slidesPerView": 6,
+              "spaceBetween": 8
+            }
+          }
+        }'>
+          <div class="swiper-wrapper">
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://smartthings.com/" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/smartthings.svg" class="d-block mx-auto my-2" width="154" alt="SmartThings">
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://developer.samsung.com/" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/samsung.svg" class="d-block mx-auto my-2" width="154" alt="Samsung Developers">
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://www.stackpath.com/" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/stackpath.svg" class="d-block mx-auto my-2" width="154" alt="StackPath">
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://www.remediant.com/" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/remediant.svg" class="d-block mx-auto my-2" width="154" alt="Remediant">
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://www.iovance.com/" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/iovance-biotherapeutics.svg" class="d-block mx-auto my-2" width="154" alt="Iovance Biotherapeutics">
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://www.bd.com/en-us" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/bd.svg" class="d-block mx-auto my-2" width="154" alt="BD">
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://www.vidiglobal.com/" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/vidi.svg" class="d-block mx-auto my-2" width="154" alt="Vidi Global">
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://r3.com/" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/r3.svg" class="d-block mx-auto my-2" width="154" alt="R3">
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://www.justisconnection.com/" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/justis-connection.svg" class="d-block mx-auto my-2" width="154" alt="Justis Connection">
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://rightbrainmedia.com/" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/rightbrainmedia.svg" class="d-block mx-auto my-2" width="154" alt="Right Brain Media">
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="https://hq.usssa.com/home" class="card card-body card-hover px-2 mx-2">
+                <img src="assets/img/brands/usssa.svg" class="d-block mx-auto my-2" width="154" alt="USSSA">
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Pagination (bullets) -->
+          <div class="swiper-pagination position-relative pt-3 mt-4 d-md-none d-flex"></div>
+        </div>
+      </section>
+
+
+      <!-- Testimonials slider -->
+      <section class="container mb-5 pt-2 pb-3 py-md-4 py-lg-5" id="about">
+        <h2 class="h1 pb-2 pb-lg-0 mb-4 mb-lg-5 text-center">What They Say About Me</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card border-0 shadow-sm p-4 p-xxl-5 mb-4 me-xxl-4">
+
+              <!-- Quotation mark -->
+              <div class="pb-4 mb-2">
+                <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
+                  <i class="bx bxs-quote-left"></i>
+                </span>
+              </div>
+
+              <!-- Slider -->
+              <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
+                "spaceBetween": 24,
+                "pager": true,
+                "loop": true,
+                "tabs": true,
+                "navigation": {
+                  "prevEl": ".page-prev",
+                  "nextEl": ".page-next"
+                }
+              }'>
+                <div class="swiper-wrapper">
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto" data-swiper-tab="#author-1">
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      <blockquote class="card-body p-0 mb-0">
+                        <p class="fs-lg mb-0">Yeny is a one-person developer relations web property machine! She single-handedly oversaw the development, roll-out and maintenance of our highly successful Developer and Community portals, and I was constantly impressed by her vision, dedication and inner self-drive. It is not easy to be a one-person product owner yet Yeny was able to drive constant improvements to the site and to lay out a long-term roadmap by relying on immense reserves of inner motivation. In addition, Yeny is extraordinarily collaborative, professional and friendly: she was regularly tapped by other parts of the business for help. Her range of skills - spanning product vision, project management as well as her technical depth - makes her extremely valuable.</p>
+                      </blockquote>
+                      <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                        <div class="d-flex align-items-center border-end-sm pe-sm-4 me-sm-2">
+                          <div class="ps-3">
+                            <h5 class="fw-semibold lh-base mb-0">Richard G Brown</h5>
+                            <span class="fs-sm text-muted">CTO</span>
+                          </div>
+                        </div>
+                        <img src="assets/img/brands/r3.svg" width="160" class="d-block mt-2 ms-5 mt-sm-0 ms-sm-0" alt="R3">
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto" data-swiper-tab="#author-2">
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      <blockquote class="card-body p-0 mb-0">
+                        <p class="fs-lg mb-0">I had a pleasure to work with Yeny for a year and a half. She is exceptional Digital Marketing and Design executive. Yeny developed data-driven strategies to promote developer related events and content. Yeny is hands-on designer, she built developer portal with the intuitive user experience - example of supreme developer portals in the blockchain market. Her team was delivering projects on time and outstanding quality. Yeny knows how to find/hire/manage elite team.</p>
+                      </blockquote>
+                      <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                        <div class="d-flex align-items-center border-end-sm pe-sm-4 me-sm-2">
+                          <div class="ps-3">
+                            <h5 class="fw-semibold lh-base mb-0">Dr. Iryna Tsimashenka</h5>
+                            <span class="fs-sm text-muted">Head of Developer Relations</span>
+                          </div>
+                        </div>
+                        <img src="assets/img/brands/protocol-labs.svg" width="160" class="d-block mt-2 ms-5 mt-sm-0 ms-sm-0" alt="Protocol Labs">
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto" data-swiper-tab="#author-3">
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      <blockquote class="card-body p-0 mb-0">
+                        <p class="fs-lg mb-0">Yeny did a fantastic job for us. Given a minimal set of inputs, she quickly created a mock-up that made clear what a clean and clear design sense she brings to her projects. We accepted the mockup with only minor changes, and she had the full Zendesk customization completed within a matter of days. She was responsive to suggested changes, but also clear when desired functionality wasn't possible. We loved working with Yeny and would eagerly work with her again!</p>
+                      </blockquote>
+                      <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                        <div class="d-flex align-items-center border-end-sm pe-sm-4 me-sm-2">
+                          <div class="ps-3">
+                            <h5 class="fw-semibold lh-base mb-0">Paul Lanzi</h5>
+                            <span class="fs-sm text-muted">Co-founder</span>
+                          </div>
+                        </div>
+                        <img src="assets/img/brands/remediant.svg" width="160" class="d-block mt-2 ms-5 mt-sm-0 ms-sm-0" alt="Company logo">
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination (Pager) -->
+            <nav class="pagination d-flex justify-content-center justify-content-md-start">
+              <div class="page-item me-2">
+                <a class="page-link page-prev btn-icon btn-sm" href="#">
+                  <i class="bx bx-chevron-left"></i>
+                </a>
+              </div>
+              <ul class="list-unstyled d-flex justify-content-center w-auto mb-0"></ul>
+              <div class="page-item ms-2">
+                <a class="page-link page-next btn-icon btn-sm" href="#">
+                  <i class="bx bx-chevron-right"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="col-md-4 d-none d-md-block">
+
+            <!-- Swiper tabs (Author images) -->
+            <div class="swiper-tabs">
+
+              <!-- Author image 1 -->
+              <div id="author-1" class="card bg-transparent border-0 swiper-tab active">
+                <div class="card-footer d-flex w-100 border-0 pb-0">
+                  <img src="assets/img/brands/r3.svg" width="160" class="d-none d-xl-block" alt="R3">
+                  <div class="border-start-xl ps-xl-4 ms-xl-2">
+                    <h5 class="fw-semibold lh-base mb-0">Richard G Brown</h5>
+                    <span class="fs-sm text-muted">CTO <span class="d-xl-none d-inline">at R3</span></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Author image 2 -->
+              <div id="author-2" class="card bg-transparent border-0 swiper-tab">
+                <div class="card-footer d-flex w-100 border-0 pb-0">
+                  <img src="assets/img/brands/protocol-labs.svg" width="160" class="d-none d-xl-block" alt="Protocol Labs">
+                  <div class="border-start-xl ps-xl-4 ms-xl-2">
+                    <h5 class="fw-semibold lh-base mb-0">Dr. Iryna Tsimashenka</h5>
+                    <span class="fs-sm text-muted">Head of Developer Relations <span class="d-xl-none d-inline">at Protocol Labs</span></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Author image 3 -->
+              <div id="author-3" class="card bg-transparent border-0 swiper-tab">
+                <div class="card-footer d-flex w-100 border-0 pb-0">
+                  <img src="assets/img/brands/remediant.svg" width="160" class="d-none d-xl-block" alt="Company logo">
+                  <div class="border-start-xl ps-xl-4 ms-xl-2">
+                    <h5 class="fw-semibold lh-base mb-0">Paul Lanzi</h5>
+                    <span class="fs-sm text-muted">Co-founder<span class="d-xl-none d-inline">Remediant, Inc</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- My Creative Process -->
+      <section class="container mb-5 pb-lg-5 pt-2 pt-md-4 d-none d-lg-block">
+        <h2 class="h1 d-md-inline-block position-relative mb-md-5 mb-4 text-md-start text-center">
+          My Creative Process
+
+          <!-- Arrow shape -->
+          <span class="d-md-block d-none position-absolute top-0 start-100 text-primary ms-4" style="width: 84px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="84" height="76" fill="currentColor"><path d="M52.873 59.368c9.856-.312 19.56 1.721 29.317 1.568.935-.074 2.084-1.013 1.722-2.019-3.406-9.705-9.025-18.368-14.874-26.844-.621-.948-2.116-.34-1.754.666-2.829 2.54-2.639 9.432-2.154 13.403-5.592 2.345-10.045 5.522-13.544 10.524-.703 1.11.064 2.705 1.287 2.702zm15.683-12.501c-.656-3.524.486-6.908.824-10.248 3.96 6.725 7.79 13.479 10.542 20.883-7.915-.124-15.674-1.371-23.618-1.625 3.071-3.274 6.922-5.5 11.278-7.295.935-.074 1.149-.938.974-1.715zm-39.5 1.536l25.888-5.82c1.294-.291 1.622-1.86.871-2.779-5.053-6.751-10.236-13.472-15.089-20.54-.592-.819-1.598-.457-1.841.278-.563-.689-1.958-.24-1.725.796.73 4.459 1.908 9.09.451 13.497-1.486 4.278-6.874 7.529-10.379 10.084-.819.592-.615 1.498-.081 2.058-.414 1.181.352 2.776 1.906 2.427zm11.493-13.598c1.774-4.206.005-9.656-1.243-13.999 3.542 6.682 7.932 12.903 12.423 18.964l-19.804 4.453c3.534-2.426 6.952-5.37 8.625-9.418zM7.077 38.931c8.313-1.733 16.584-3.049 24.39-6.435 1.107-.521 1.175-2.032.453-2.822-5.021-5.398-9.712-11.143-15.093-16.324-.346-.33-.764-.372-1.152-.285-.463-.848-2.116-.34-1.754.666 1.028 2.76.992 5.624 1.086 8.459.122 2.964.064 2.705-2.075 4.682-2.369 2.165-5.699 5.497-7.159 8.681-1.537 1.025-.768 3.844 1.303 3.378zm10.806-11.813c.46-.375.602-.951.486-1.469-.711-2.559-.805-5.394-1.257-8.012 3.407 4.266 6.972 8.631 10.608 12.709-5.492 2.186-11.375 3.237-17.228 4.417.201-.317.531-.663.732-.98 1.864-2.595 4.075-4.86 6.66-6.665z"/></svg>
+          </span>
+        </h2>
+
+        <!-- Process -->
+        <section class="container mb-3">
+
+          <div class="card-group">
+
+              <!-- Item -->
+              <div class="card text-center px-2 mx-2 rounded-circle">
+                <div class="card-body">
+                  <img src="assets/img/landing/icons/prepare.svg" width="36" class="mb-3" alt="Prepare">
+                  <h5 class="card-title">Prepare</h5>
+                  <p class="mb-0">Research. Consume. Gather.</p>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="card text-center px-2 mx-2 rounded-circle">
+                <div class="card-body">
+                  <img src="assets/img/landing/icons/incubate.svg" width="36" class="mb-3" alt="Incubate">
+                  <h5 class="card-title">Incubate</h5>
+                  <p class="mb-0">Explore. Experiment. Synthesize.</p>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="card text-center px-2 mx-2 rounded-circle">
+                <div class="card-body">
+                  <img src="assets/img/landing/icons/illuminate.svg" width="36" class="mb-3" alt="Illuminate">
+                  <h5 class="card-title">Illuminate</h5>
+                  <p class="mb-0">Brainstorm. Collect. Aha!</p>
+                </div>
+              </div>
+ 
+              <!-- Item -->
+              <div class="card text-center px-2 mx-2 rounded-circle">
+                <div class="card-body">
+                  <img src="assets/img/landing/icons/evaluate.svg" width="36" class="mb-3" alt="Evaluate">
+                  <h5 class="card-title">Evaluate</h5>
+                  <p class="mb-0">Reflect. Criticize. Assess.</p>
+                </div>
+              </div>
+     
+              <!-- Item -->
+              <div class="card text-center px-2 mx-2 rounded-circle">
+                <div class="card-body">
+                  <img src="assets/img/landing/icons/implement.svg" width="36" class="mb-3" alt="Implement">
+                  <h5 class="card-title">Implement</h5>
+                  <p class="mb-0">Develop. Test. Revise.</p>
+                </div>
+              </div>
+
+          </div>
+        </section>
+
+
+
+
+      </section>
+
+      <!-- Reading Picks + Contact CTA -->
+      <div class="bg-secondary mb-5 pt-5">
+
+        <!-- Blog -->
+        <section class="container mb-5 py-lg-5">
+          <h2 class="h1 mb-4 pb-3 text-center">Top Reading Picks</h2>
+          <div class="row">
+            <div class="col-lg-5 col-12 mb-lg-0 mb-4">
+
+              <!-- Article -->
+              <article class="card h-100 border-0 shadow-sm">
+                <div class="position-relative">
+                  <img src="assets/img/landing/blog/how-building-a-design-system-empowers-your team-to-focus-on-people.jpg" class="card-img-top" alt="How building a design system empowers your team to focus on people">
+                </div>
+                <div class="card-body pb-4">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <apan class="badge fs-sm text-nav bg-secondary">UX</span>
+                  </div>
+                  <h3 class="h5 mb-0">
+                    <a href="https://product.hubspot.com/blog/how-building-a-design-system-empowers-your-team-to-focus-on-people-not-pixels" target="_blank">How building a design system empowers your team to focus on people — not pixels.</a>
+                  </h3>
+                </div>
+                <div class="card-footer py-4">
+                  <div class="d-inline-flex align-items-center position-relative me-3">
+                    <img src="assets/img/avatar/mariah-muscato.jpg" class="rounded-circle me-3" width="48" alt="Mariah Muscato">
+                    <div>
+                      <a href="#https://product.hubspot.com/blog/author/mariah-muscato" class="nav-link p-0 fw-bold text-decoration-none stretched-link">Mariah Muscato</a>
+                      <span class="fs-sm text-muted">Principal Product Designer @ HubSpot.</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+
+              <!-- Article -->
+              <article class="card border-0 shadow-sm overflow-hidden mb-4">
+                <div class="row g-0">
+                  <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/landing/blog/customization-vs-configuration-in-evolving-design-systems.jpg); min-height: 15rem;">
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <span class="badge fs-sm text-nav bg-secondary">Design</span>
+                      </div>
+                      <h3 class="h5">
+                        <a href="https://engineering.atspotify.com/2021/04/customization-vs-configuration-in-evolving-design-systems/" target="_blank">Customization vs. Configuration in Evolving Design Systems</a>
+                      </h3>
+                      <hr class="my-4">
+                      <div class="d-flex flex-sm-nowrap flex-wrap align-items-center justify-content-between">
+                        <div class="d-flex align-items-center position-relative me-3">
+                          <img src="assets/img/avatar/spotify.jpg" class="rounded-circle me-3" width="48" alt="Spotify">
+                          <div>
+                            <span class="p-0 fw-bold">Charlie Backus</span>
+                            <span class="fs-sm text-muted">@ Spotify</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Article -->
+              <article class="card border-0 shadow-sm overflow-hidden">
+                <div class="row g-0">
+                  <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/landing/blog/the-future-of-design-systems-is-automated.jpg); min-height: 15rem;">
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <span class="badge fs-sm text-nav bg-secondary">Design</span>
+                      </div>
+                      <h3 class="h5">
+                        <a href="https://www.figma.com/blog/the-future-of-design-systems-is-automated/" target="_blank">The future of design systems is automated</a>
+                      </h3>
+                      <hr class="my-4">
+                      <div class="d-flex flex-sm-nowrap flex-wrap align-items-center justify-content-between">
+                        <div class="d-flex align-items-center position-relative me-3">
+                          <img src="assets/img/avatar/figma.jpg" class="rounded-circle me-3" width="48" alt="Figma">
+                          <div>
+                            <span class="fs-sm text-muted">Figma</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="container pt-3 pb-4 pb-md-5" style="margin-top: -156px; margin-bottom: 120px; transform: translateY(156px);">
+          <div class="card border-0 bg-gradient-primary">
+            <div class="card-body p-md-4 p-4 bg-size-cover" style="background-image: url(assets/img/landing/contact-bg.png);">
+              <div class="py-md-5 py-4 text-center">
+                <h2 class="fw-normal text-light opacity-75">I'm always down to collaborate. Reach out and let's chat!</h2>
+                
+                  <lottie-player src="https://lottie.host/22246f07-91c2-4994-aca9-7cafb0e69f6e/0VpVxYD6rR.json"  background="transparent"  speed="1"  style="width: 240px; height: 240px;"  loop  autoplay class="mx-auto"></lottie-player>
+                
+                <div class="pt-md-4 pt-4 pb-md-2">
+                  <a href="mailto:hellomuisca@gmail.com?subject=Hello%20there" class="btn btn-lg btn-light">Let's discuss your project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4 pb-lg-5 mt-2 mt-md-0">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img src="assets/img/logo.svg" width="47" alt="Muisk">
+              Muisk
+            </div>
+            <p class="fs-sm pb-lg-3 mb-4">Yeny Rubiano owns Muisk Designs LLC, providing her design skills to various companies as a freelancer. Yeny is currently working at SmartThings as a contractor and resides in the sunshine state of Florida.<br />
+            Yeny is a traveler in real life. Likes good typography and the smell of colored pencils. </p>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row">
+              <div class="col-lg-6">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                </h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="#home" class="nav-link d-inline-block px-0 pt-1 pb-2" data-scroll>Home</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link d-inline-block px-0 pt-1 pb-2" data-scroll>Projects</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link d-inline-block px-0 pt-1 pb-2" data-scroll>Skills</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link d-inline-block px-0 pt-1 pb-2" data-scroll>About</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-3">
+                <h6 class="mb-2">
+                  <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+                </h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="https://www.linkedin.com/in/muiscadesigns/" target="_blank" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/muiscadesigns/" target="_blank" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                    <li class="nav-item"><a href="https://twitter.com/MuiscaDesigns" target="_blank" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                    <li class="nav-item"><a href="https://dribbble.com/muiscadesigns" target="_blank" class="nav-link d-inline-block px-0 pt-1 pb-2">Dribbble</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          &copy; All rights reserved 2023 &nbsp; &bull; &nbsp; Made by Muisk Designs
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
 </html>
